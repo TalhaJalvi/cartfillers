@@ -1,0 +1,190 @@
+/* --------------------------------------- General overall page lay out ---------------------------------------------------------------------------*/
+body{
+  background-color: white;
+}
+.container{
+  display:grid;
+  grid-gap: 2px;
+  width: 100%;
+  grid-template-areas: "navbar navbar navbar navbar" 
+                       "upmaindiv upmaindiv upmaindiv upmaindiv"   
+                       "lowmaindiv lowmaindiv lowmaindiv lowmaindiv"
+                       "mapofphysicalbranch mapofphysicalbranch mapofphysicalbranch mapofphysicalbranch"
+                       "footer footer footer footer"
+                       
+}
+/*--------------------------------------------------End general page layout ----------------------------------------------------------------------*/
+
+
+.navbar{
+  grid-area: navbar;
+  height: 80px;
+  width: 100%;
+  background-color: #292930;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+}
+.footer{
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+background-color: #292930;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+}
+.lowerfooter_left{
+  float: left;
+  height: auto;
+  width: 50%;
+
+}
+}
+.lowerfooter_right{
+  float: right;
+  width: 50%;
+  height: auto;
+}
+
+label.logo{
+  color:#FCC133;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+ a{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.upmaindiv{
+  grid-area: upmaindiv;
+  height:auto;
+  margin-top: 1%;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  
+}
+.upleftdiv{
+  margin-left: 2%;
+  float: left;
+  width: 45%;
+  height: auto;
+}
+.uprightdiv{
+  float: right;
+  width: 45%;
+  height: auto;
+  margin-left: 2%;
+}
+.lowmaindiv{
+  grid-area: lowmaindiv;
+  height: auto;
+  width: 95%;
+  align-items: center;
+  text-align: center;
+
+}
+.mapofphysicalbranch{
+  grid-area:mapofphysicalbranch ;
+  height: auto;
+  width: 100%;
+  margin:auto;
+  align-items: center;
+  text-align: center;
+}
+
+
+@media (max-width: 1030px){
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+  #img{
+  display: none;
+}
+
+}
+@media (max-width: 950px){
+  .upmaindiv{
+flex-direction: column;
+width: 100%;
+  
+}
+.upleftdiv{
+width: 100%;
+}
+.uprightdiv{
+width: auto;
+}
+.lowmaindiv{
+  text-align: left;
+  width: auto;
+}
+
+.navbar{
+  width: 100%;
+}
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #4C2D73;
+    top: 90px;
+    left: -120%;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 10px;
+    text-align: left;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  a:hover{
+    background: none;
+    color: #0082e6;
+  }
+
+h2{
+  size: 12px;
+}
+}
+@media (max-width: 380px){
+    .footer{
+    flex-direction: column;
+  }
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}

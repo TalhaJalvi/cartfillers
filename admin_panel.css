@@ -1,0 +1,175 @@
+body{
+	background-color: white;
+}
+.container{
+	display:grid;
+	grid-gap: 2px;
+	width: 100%;
+	grid-template-areas: "navbar navbar navbar navbar navbar" 
+                        "mainbody mainbody mainbody mainbody mainbody "
+} 
+/*--------------------------------------------------End general page layout ----------------------------------------------------------------------*/
+
+.navbar{
+	grid-area: navbar;
+	height: 80px;
+	width: 100%;
+	background-color: #292930;
+	color: white;
+	display: flex;
+
+}
+.mainbody{
+	grid-area: mainbody;
+	width: 100%;
+	height: auto;
+	display: flex;
+}
+.leftmenu{
+  height: 550px;
+  width: 20%;
+  background-color: #00003f;
+  float: left;
+}
+.rightmenu1{
+  display: none;
+  width: 70%;
+  margin:1% 3%;
+  height: 550px;
+  float: right;
+  overflow-y: scroll;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu1::-webkit-scrollbar{
+  display: none;
+}
+.rightmenu2{
+  display: none;
+  width: 70%;
+  margin:1% 3%;
+  height: 550px;
+  float: right;
+    overflow-y: scroll;
+    overflow-x: scroll;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu2::-webkit-scrollbar{
+  display: none;
+}
+.rightmenu3{
+ display: none;
+  width: 70%;
+  margin:1% 3%;
+  height: 550px;
+  float: right;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  white-space: nowrap;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu3::-webkit-scrollbar{
+  display: none;
+}
+.rightmenu4{
+  display: none;
+  width: 70%;
+  margin:1% 3%;
+  height: 550px;
+  overflow-y: scroll;
+  overflow-x: scroll;
+  white-space: nowrap;
+  float: right;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu4::-webkit-scrollbar{
+  display: none;
+}
+
+/* The below is just for java Script Purpose  of left menu opening right div*/
+
+/* The above is just for Java Script Purpose*/
+/* ------------------------------------Hovering back of left menu ----------------------------------------------*/
+.leftmenubuttons
+{
+  width: 100%;
+  height: 90px;
+  background-color: #00003f;
+  border: none;
+  color: white;
+}
+button:hover{
+  background: #FCC133;
+  transition: .5s;
+  cursor: pointer;
+}
+label.logo{
+  color: #FCC133;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 0px 13px;
+  border-radius: 3px;
+}
+nav ul li button{
+  margin-left: 0px; 
+  color: white;
+  background-color: #00003f;
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  padding: 0px 2px;
+  border-radius: 6px;
+  text-transform: uppercase;
+
+}
+nav ul li button:hover{
+  background: #FCC133;
+  transition: .5s;
+}
+a:hover{
+  background: #FCC133;
+  transition: .5s;
+}
+
+
+/* ------------------------------------Hovering back of left menu -------------------------------------------------------------------*/
+ tr:nth-child(odd){
+  background-color:#ADD8E6;
+ }
+th{
+   background-color: #292930;
+   color: white;
+}
+ /*----------------------------------only for JS -----------------------------------------------------------------------------------------*/
+ #regmembers{
+  
+ }
+ #customerorders{
+
+ }
+ #feedback{
+
+ }
+ #stock{
+
+ }

@@ -1,0 +1,475 @@
+/* --------------------------------------- General overall page lay out ---------------------------------------------------------------------------*/
+body{
+	background-color: white;
+}
+.container{
+	display:grid;
+	grid-gap: 2px;
+	width: 100%;
+	grid-template-areas: "navbar navbar navbar navbar navbar" 
+	                     "video video video video video"
+	                     "footer footer footer footer footer"
+	 
+	                     
+}
+/*--------------------------------------------------End general page layout ----------------------------------------------------------------------*/
+
+
+
+.navbar{
+	grid-area: navbar;
+	height: 80px;
+	width: 100%;
+	background-color: #292930;
+	color: white;
+  border-radius: 12px;
+	display: flex;
+
+}
+.footer{
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+background-color: #292930;
+  color: white;
+  border-radius: 18px;
+  display: flex;
+
+}
+.lowerfooter_left{
+  float: left;
+  height: auto;
+  width: 45%;
+
+}
+}
+.lowerfooter_right{
+  float: right;
+  width: 45%;
+  height: auto;
+}
+
+label.logo{
+  color: #FCC133;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+a{
+  color: white;
+  font-size: 20px;
+  padding: 0px 13px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+nav ul li button{
+  margin-left: 0px;	
+  color: white;
+background-color: #FCC133;
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  padding: 0px 2px;
+  border-radius: 6px;
+  text-transform: uppercase;
+
+}
+nav ul li button:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+ a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+
+.video{
+	grid-area: video;
+	height:auto;
+  margin: auto;
+  
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* Login model form popup windows css here*/
+
+/* This is for msking our orignal screen background black opacity*/
+.bg-model{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+/* Content of of our bg-model this is white coloured form whic will appear*/
+.model-content{
+ width: 450px;
+ height: 350px;
+background-color: white;
+ border-radius: 8px;
+ position: relative;
+ margin: auto;
+}
+
+form{
+   margin-top: 60px; 
+}
+
+  /* Now stylizing our text boxes*/
+ input[type="text"]{
+  margin: auto;
+   width: 150px;
+  height: 20px;
+  border-radius: 6px;
+  display: block;
+
+  /* Display block means that all iput elements (one text field one password field and one button will appear on separate lines)*/
+ border-radius: 2px;
+ } 
+  input[type="password"]{
+  border-radius: 3px;
+ } 
+ /* On focus changing border colour*/
+  input[type="text"]:focus{
+  border-color: #1b9bff;
+ } 
+  input[type="password"]:focus{
+    border-color: #1b9bff;
+ } 
+form button{
+  margin-top: 12px;
+}
+/* CSS code for cross button layout on login pop up*/
+.close_lgin_popup_btn{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+.close_lgin_popup_btn:hover{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#loginbutton{
+  /* Only for java script purpose*/
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* Register model form popup windows css here*/
+
+/* This is for msking our orignal screen background black opacity*/
+.bg-model2{
+   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Content of of our bg-model this is white coloured form whic will appear*/
+.model-content2{
+ width: 500px;
+ height: 800px;
+background-color: white;
+ border-radius: 8px;
+ position: relative;
+ margin: auto;
+ /* The above line position relative means anything inside will be positioned according to  this content not b-model if not used 
+    our cross button will be positioned relative to bg-model*/
+}
+
+form{
+  margin-top: 30px;
+}
+
+
+  /* Now stylizing our text boxes*/
+ input[type="text"]{
+  width: 220px;
+  height: 20px;
+  border-radius: 6px;
+  display: block;
+
+  /* Display block means that all iput elements (one text field one password field and one button will appear on separate lines)*/
+  margin-left: 130px;
+  margin-top: 15px;
+ } 
+  input[type="password"]{
+  display: block;
+
+  /* Display block means that all iput elements (one text field one password field and one button will appear on separate lines)*/
+  margin-left: 130px;
+  margin-top: 15px;  
+  width: 220px;
+  height: 20px;
+  border-radius: 6px;
+ } 
+ /* On focus changing border colour*/
+  input[type="text"]:focus{
+  border-color: #1b9bff;
+ } 
+  input[type="password"]:focus{
+    border-color: #1b9bff;
+ }
+input[type="radio"]{
+  margin-left: 15%;
+  display: inline-block;
+  margin-top: 8%;
+}
+form button{
+  margin-top: 12px;
+}
+/* CSS code for cross button layout on login pop up*/
+.close_regter_popup_btn{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  /* The above 5 lines will make or position our close button to right place*/
+  cursor: pointer;
+  /* The above one line will make cursor to pointing hand whenever our pointer come close to it*/
+}
+#registerbutton{
+  /* Only for java script purpose*/
+}
+#regsubbut{
+  /* only for java script purpose */
+}
+#EMAIL{
+  /* Only for Java Script purpose */
+}
+
+#PASSWORD{
+  /* Only for Java Script purpose */
+}
+#RETYPEPASSWORD{
+  /* Only for Java Script purpose */
+}
+#MALE{
+  /* For java script purpose */
+}
+#FEMALE{
+  /* For java script purpose */
+}
+#OTHER{
+  /* For java script purpose */
+}
+#USERNAME{
+  /* Only for Java Script purpose */
+}
+#PHONENO{
+  /* Only for Java Script purpose */
+}
+#ADDRESS{
+  /* Only for Java Script purpose */
+}
+#MASTERCARD{
+  /* Only for Java Script purpose */
+}
+#MASTERCARDNO{
+ /* Only for Java Script purpose */
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------*/
+/* Register model form popup windows css here*/
+
+/* This is for msking our orignal screen background black opacity*/
+.bg-model3{
+   display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/* Content of of our bg-model this is white coloured form whic will appear*/
+.model-content3{
+ width: 450px;
+ height: 300px;
+background-color: white;
+ border-radius: 8px;
+ position: relative;
+ margin: auto;
+}
+
+form{
+  margin-top: 60px;
+}
+
+
+  /* Now stylizing our text boxes*/
+ textarea{
+  width: 320px;
+  height: 150px;
+  border-radius: 6px;
+  display: block;
+
+ } 
+ /* On focus changing border colour*/
+  textarea:focus{
+  border-color: #1b9bff;
+ } 
+/* CSS code for cross button layout on login pop up*/
+.close_fdlink_popup_btn{
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 42px;
+  transform: rotate(45deg);
+  /* The above 5 lines will make or position our close button to right place*/
+  cursor: pointer;
+  /* The above one line will make cursor to pointing hand whenever our pointer come close to it*/
+}
+#Feedbacklink{
+  /* Only for java script purpose*/
+}
+#FEEDBACKTXTAREA{
+  /* Only for java script purpose */
+}
+/* -------------------------------------------------- bg-model3 ends here -------------------------------------*/
+
+@media (max-width: 1030px){
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 14px;
+  }
+  #img{
+  display: none;
+}
+
+}
+@media (max-width: 950px){
+ 
+.navbar{
+  width: 100%;
+}
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(#4C2D73,#AF27EE);
+    top: 90px;
+    left: -120%;
+    transition: all .5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 10px;
+    text-align: left;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  a:hover{
+    background: none;
+    color: #0082e6;
+  }
+
+
+h2{
+  size: 12px;
+}
+}
+@media (max-width: 600px){
+
+ .model-content3{
+width: 80%;
+}
+ textarea{
+  width: 80%;
+
+ } 
+ .model-content{
+  width: 80%;
+ }
+.model-content2{
+  width: 80%;
+  }
+
+    /* Now stylizing our text boxes*/
+ input[type="text"]{
+   width: 70%;
+ } 
+
+  input[type="password"]{
+  width: 70%;
+ } 
+}
+@media (max-width: 380px){
+    .footer{
+    flex-direction: column;
+  }
+ 
+  label.logo{
+    font-size: 20px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+    #img{
+  display: none;
+}
+}

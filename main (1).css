@@ -1,0 +1,276 @@
+body{
+	background-color: white;
+}
+.container{
+	display:grid;
+	grid-gap: 2px;
+	width: 100%;
+	grid-template-areas: "navbar navbar navbar navbar navbar" 
+                        "upmenu upmenu upmenu upmenu upmenu "
+                        "lowmenu lowmenu lowmenu lowmenu lowmenu"
+} 
+/*--------------------------------------------------End general page layout ----------------------------------------------------------------------*/
+
+.navbar{
+	grid-area: navbar;
+	height: 80px;
+	width: 100%;
+	background-color:#292930;
+	color: white;
+	display: flex;
+
+}
+
+.upmenu{
+  grid-area: upmenu;
+  height: 70px;
+  width: 95%;
+  display: flex;
+  margin: 1% 2%;
+  background-color: #FCC133;
+  border-radius: 15px;
+}
+.lowmenu{
+  grid-area: lowmenu;
+  height: auto;
+  width: auto;
+}
+.rightmenu5{
+  display: flex;
+  width: 100%;
+}
+.rightmenu1{
+  display: none;
+  width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu2{
+  display: none;
+ width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu3{
+ display: none;
+  width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu4{
+  display: none;
+  width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+}
+.rightmenu6{
+  display: none;
+  overflow-y: scroll;
+ width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+}
+/* ----------------------------Below is code for products Carousel ------------------------------------------------*/
+.carousel{
+height: 170px;  
+overflow-x: scroll;
+max-width: 70%;
+min-width: 10%;
+white-space: nowrap;
+padding-left: 5%;
+margin: auto;
+}
+.carousel::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-box{
+   position: relative;
+  margin-left: 5px;
+  height: 150px;
+  width: 150px;
+  min-width:50px; 
+  background-color: white;
+  border-radius: 5px;
+display: inline-flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.slider-box:hover{
+  box-shadow: 2px 2px 12px rgba(47,47,47,0.40);
+}
+.slider-box a{
+  text-decoration: none;
+  text-align: center;
+}
+.img-box{
+  max-height: 170px;
+  min-height: 1px;
+}
+.img-box img{
+  max-height: 130;
+  min-height: 1px;
+  max-width: 100%;
+  min-width: 1px;
+
+}
+.time{
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  color: #FCC133;
+}
+.price{
+  color: white;
+  background-color: #FCC133;
+  line-height: auto;
+}
+.cart{
+   position:absolute;
+   bottom: 0px;
+   height: auto;
+   background-color: #FCC133;
+   max-width: 100%;
+   min-width: 1%;
+   display: flex;
+   color: white;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.cart:hover{
+  background: #1b9bff;
+  transition: .5s;
+  cursor: pointer;
+}
+
+
+/*------------------------------carousel code ends here ----------------------------------------------------------*/
+/*  ---------------------------------Cart items here cart items are shown ----------------------------------------*/
+.rightmenu7{
+  display: none;
+  width: 95%;
+  height: 550px;
+  border-radius: 15px;
+  border-top: solid; 
+  border-bottom: solid;
+  border-color: #4C2D73;
+  align-items: center;
+  text-align: center;
+
+}
+/* Also stylizing our table */
+th{
+   background-color: #292930;
+   color: white;
+}
+
+ tr:nth-child(odd){
+  background-color:#ADD8E6;
+ }
+
+/* ----------------------------------------End of cart items -----------------------------------------------------*/
+/* The below is just for java Script Purpose  of left menu opening right div*/
+#tshirts{
+
+}
+#jeans{
+
+}
+#hoddies{
+
+}
+#shoes{
+
+}
+#history{
+
+}
+#cart{
+
+}
+/* The above is just for Java Script Purpose*/
+/* ------------------------------------Hovering back of left menu ----------------------------------------------*/
+
+.upmenubuttons{
+  width: 100%;
+  height: 70px;
+  background-color: #FCC133;
+  color: white;
+}
+button:hover{
+  background: #1b9bff;
+  transition: .5s;
+  cursor: pointer;
+}
+label.logo{
+  color:#FCC133;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  text-decoration: none;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 20px;
+  padding: 0px 13px;
+  border-radius: 3px;
+}
+nav ul li button{
+  margin-left: 0px; 
+  color: white;
+  background-color: #FCC133;
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  padding: 0px 2px;
+  border-radius: 6px;
+  text-transform: uppercase;
+
+}
+nav ul li button:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+/* ------------------------------------Hovering back of left menu -------------------------------------------------------------------*/
